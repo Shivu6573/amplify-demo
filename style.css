@@ -6,64 +6,97 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    background: #f4f6f9;
+}
+
+/* Navbar */
+nav {
+    background: #4e73df;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
 }
 
-header {
-    padding: 100px 20px;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+nav ul li {
+    margin-left: 20px;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    background: white;
-    color: #1f4037;
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #333;
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
     color: white;
 }
 
+.hero button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    background: white;
+    color: #4e73df;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: #ddd;
+}
+
+/* Features */
 .features {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 30px;
-    width: 250px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.25);
-}
-
-footer {
+    background: white;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
-    margin-top: 40px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact input {
+    padding: 8px;
+    width: 200px;
+}
+
+.contact button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background: #4e73df;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
