@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AWS Amplify Demo</title>
+    <title>AWS Amplify Mini Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello from AWS Amplify 🚀</h1>
-    <p>This website is hosted using AWS Amplify.</p>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">CloudDemo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🚀 Hosted on AWS Amplify</h1>
+        <p>This is a mini full-stack style frontend demo deployed using AWS Cloud.</p>
+        <button onclick="showMessage()">Click to Interact</button>
+        <p id="message"></p>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="card">
+            <h3>Fast Hosting</h3>
+            <p>Global CDN powered by AWS infrastructure.</p>
+        </div>
+
+        <div class="card">
+            <h3>CI/CD Enabled</h3>
+            <p>Automatically deploys when GitHub updates.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scalable</h3>
+            <p>Handles traffic automatically with AWS cloud.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Enter your name">
+        <button onclick="thankYou()">Submit</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CloudDemo | Hosted on AWS Amplify</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
